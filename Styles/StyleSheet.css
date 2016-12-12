@@ -1,0 +1,9 @@
+﻿body {
+}
+#banner
+{
+    height: 170px;
+    width: 100%;
+    background-image: url(../Images/recipes-banner.jpg);
+   
+}

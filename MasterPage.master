@@ -1,0 +1,45 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta content="en-us" http-equiv="Content-Language"/>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="robots" content="noindex, nofollow"/>
+    <link rel="stylesheet" type="text/css" href="~/Styles/StyleSheet.css" />
+    <title>Recipe World</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body id="bodyBackground">
+    
+            <div id="banner">
+                <h1> Receipe Book </h1>
+            </div>
+    <form id="form1" runat="server">
+    <nav class="navbar navbar-inverse">
+	  	<div class="container-fluid">
+	    	
+	   		
+	    	<ul class="nav navbar-nav">
+	     	 	<li class="active"><a href="home.aspx">Home</a></li>
+	      		<li><a href="recipes.aspx">Recipes</a></li>
+                <li><a href="Add_Reciepes.aspx">Add Recipe</a></li> 
+                <li><a href="Search.aspx">Search</a></li>  
+	    	</ul>
+	  	</div>
+	</nav>
+    <div id="containerBackground">
+        <asp:ContentPlaceHolder id="container" runat="server">
+            
+        </asp:ContentPlaceHolder>
+    </div>
+	<footer class="container-fluid text-center">
+  		<p>&copy;&nbsp; MY WebPage</p>
+	</footer>
+    </form>
+</body>
+</html>
